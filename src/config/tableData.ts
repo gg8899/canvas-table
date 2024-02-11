@@ -4,7 +4,7 @@ for (let i = 0; i < 1000; i++) {
         key: i + 1,
         name: `Mui${i}`,
         age: Math.ceil(Math.random() * 100),
-        address: '湖底公园',
+        address: '湖底公园湖底公园湖底公园湖底公园',
     });
 }
 
