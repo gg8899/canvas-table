@@ -1,4 +1,14 @@
-export const tableData = {
+const arr = [];
+for (let i = 0; i < 1000; i++) {
+    arr.push({
+        key: i + 1,
+        name: `Mui${i}`,
+        age: Math.ceil(Math.random() * 100),
+        address: '湖底公园',
+    });
+}
+
+export const tableDataData = {
     column: [
         {
             title: '姓名',
@@ -16,30 +26,5 @@ export const tableData = {
             key: 'address',
         },
     ],
-    dataSource: [
-        {
-            key: '1',
-            name: '胡彦斌',
-            age: 32,
-            address: '西湖区湖底公园1号',
-        },
-        {
-            key: '2',
-            name: '胡彦祖',
-            age: 42,
-            address: '西湖区湖底公园1号',
-        },
-        {
-            key: '3',
-            name: '胡彦斌',
-            age: 32,
-            address: '西湖区湖底公园1号',
-        },
-        {
-            key: '4',
-            name: '胡彦祖',
-            age: 42,
-            address: '西湖区湖底公园1号',
-        },
-    ],
+    dataSource: arr
 }
